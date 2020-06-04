@@ -32,7 +32,8 @@ class CaesarCipher {
         }
 
         //Eliminates any whitespace and non alphabetic characters and converting to uppercase
-        plainText = plainText.filter { it.isLetter() }.toUpperCase()
+        plainText = plainText.filter { it.isLetter() }.toUpperCase()                            //lambda function
+       
 
         for (element in plainText) {
             val lookUp = (charMap[element]!! + key) % 26
