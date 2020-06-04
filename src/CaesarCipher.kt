@@ -105,7 +105,7 @@ class CaesarCipher {
 
 fun main() {
 
-    var encryptor: CaesarCipher = CaesarCipher()                              //An object of class CaesarCipher is created
+    var encryptor: CaesarCipher = CaesarCipher()                              // An object of class CaesarCipher is created
 
     val key:Int = encryptor.generateKey()
 
@@ -113,5 +113,5 @@ fun main() {
     println("Encrypted Value : $encryptedValue")
 
     val decryptedValue: String? =encryptor.decrypt(encryptedValue!!, key)
-    println("Decrypted Value : $decryptedValue")                               //Returns the original text which is stripped of numbers and special characters
+    println("Decrypted Value : $decryptedValue")                               // Returns the original text which is stripped of numbers and special characters
 }
